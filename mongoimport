@@ -1,0 +1,9 @@
+# Example command to import a JSON file
+mongoimport --uri "mongodb+srv://<username>:<password>@<cluster-url>/secondChance?retryWrites=true&w=majority" \
+            --collection items \
+            --type json \
+            --file /path/to/your/dataset.json \
+            --jsonArray
+
+# The output should show that 16 documents were successfully imported.
+# Capture this terminal output in your screenshot.
